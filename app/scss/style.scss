@@ -2,15 +2,77 @@
 @import "libs";
 @import "fonts";
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: 'Lato', ;
   font-size: 16px;
   background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  .wrapper {
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+
+    .flex {
+      align-items: center;
+    }
+
+    .cart::before {
+      content: '';
+      background: url('../img/shopping-bag.svg');
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 130px;
+    }
+
+    .search {
+      border: 1px solid #959595;
+      padding: 10px;
+      margin-left: 30px;
+    }
+  }
+}
+
+.nav {
+  align-items: center;
+
+  a {
+    margin-right: 20px;
+  }
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
 }
 
 
