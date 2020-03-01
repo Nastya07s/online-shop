@@ -82,7 +82,7 @@ header {
   margin: 0 auto;
 
   .wrapper {
-    background: url('../img/bg-header1.jpg') left 20% no-repeat;
+    background: url('../img/bg-header.jpg') left 20% no-repeat;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +106,7 @@ header {
     }
   }
 
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -117,6 +118,283 @@ h1 {
   margin-top: 160px;
 }
 
+.gallery {
+  height: 1400px;
+  color: white;
+  display: grid;
+  grid-template-areas: "block1 block2 block3 block4"
+    "block1 block5 block6 block7"
+    "block8 block9 block10 block7";
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: repeat(3, 25%);
+
+  .block1 {
+    grid-area: block1;
+
+    background: url('../img/black-dress.jpg') 30% no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.2) inset;
+
+    span {
+      display: block;
+      font-style: italic;
+      font-family: 'Lato', sans-serif;
+      font-size: 25px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .block2 {
+    grid-area: block2;
+
+    background: url('../img/festival.jpg') 46% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+
+    box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.8) inset;
+
+    div::before,
+    div::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 30px;
+      background-color: white;
+      top: 110px;
+    }
+
+    div::before {
+      left: 100px;
+    }
+
+    div::after {
+      right: 100px;
+    }
+
+    p {
+      font-family: 'Georgia Italic';
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    p:last-child {
+      font-family: 'Lato', ;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+
+  .block3 {
+    grid-area: block3;
+
+    background: url('../img/elegant-shoes.jpg');
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+  }
+
+  .block4 {
+    grid-area: block4;
+
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 33px;
+
+    p:first-child{
+      font-size: 40px;
+    }
+
+    p:nth-child(2){
+      margin-top: 10px;
+    }
+
+    p:last-child{
+      font-family: 'Georgia Italic';
+      font-size: 20px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-top: 10px;
+    }
+  }
+
+  .block5 {
+    grid-area: block5;
+
+    background: url('../img/chuck-taylors.jpg') 50% 60% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 33px;
+
+    box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.2) inset;
+    
+    p:last-child{
+      font-family: 'Georgia Italic';
+      font-size: 25px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-top: 10px;
+    }
+  }
+
+  .block6 {
+    grid-area: block6;
+
+    background: url('../img/pirelli.jpg') 46% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+
+    box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.6) inset;
+
+    div::before,
+    div::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 30px;
+      background-color: white;
+      top: 120px;
+    }
+
+    div::before {
+      left: 100px;
+    }
+
+    div::after {
+      right: 100px;
+    }
+
+    p {
+      font-family: 'Georgia Italic';
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    p:last-child {
+      font-family: 'Lato', ;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+
+  .block7 {
+    grid-area: block7;
+
+    background: url('../img/jeans-adventure.jpg') 40% no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 0 176px rgba(0, 0, 0, 0.2) inset;
+
+    span {
+      display: block;
+      font-style: italic;
+      font-family: 'Lato', sans-serif;
+      font-size: 25px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .block8 {
+    grid-area: block8;
+
+    background: url('../img/jaxon-hat.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .block9 {
+    grid-area: block9;
+
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 33px;
+
+    p:first-child{
+      font-size: 40px;
+    }
+
+    p:nth-child(2){
+      margin-top: 10px;
+    }
+
+    p:last-child{
+      font-family: 'Georgia Italic';
+      font-size: 20px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-top: 10px;
+    }
+  }
+
+  .block10 {
+    grid-area: block10;
+
+    background: url('../img/basic-blazer.jpg') 50% 60% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 33px;
+
+    box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.1) inset;
+    
+    p:last-child{
+      font-family: 'Georgia Italic';
+      font-size: 25px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-top: 10px;
+    }
+  }
+
+}
 
 
 @import "media";
