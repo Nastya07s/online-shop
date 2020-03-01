@@ -1,0 +1,26 @@
+@mixin block {
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@mixin block-span {
+  display: block;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+@mixin block-p-last {
+  font-family: 'Georgia Italic';
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}

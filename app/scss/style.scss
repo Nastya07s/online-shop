@@ -132,26 +132,15 @@ h1 {
     grid-area: block1;
 
     background: url('../img/black-dress.jpg') 30% no-repeat;
-    background-size: cover;
+    @include block;
     font-weight: bold;
-    text-align: center;
     font-size: 35px;
     line-height: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.2) inset;
 
     span {
-      display: block;
-      font-style: italic;
-      font-family: 'Lato', sans-serif;
-      font-size: 25px;
-      letter-spacing: 1.5px;
+      @include block-span;
     }
   }
 
@@ -159,14 +148,7 @@ h1 {
     grid-area: block2;
 
     background: url('../img/festival.jpg') 46% no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    @include block;
     position: relative;
 
     box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.8) inset;
@@ -214,28 +196,21 @@ h1 {
   .block4 {
     grid-area: block4;
 
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include block;
     font-weight: bold;
     font-size: 33px;
 
-    p:first-child{
+    p:first-child {
       font-size: 40px;
     }
 
-    p:nth-child(2){
+    p:nth-child(2) {
       margin-top: 10px;
     }
 
-    p:last-child{
-      font-family: 'Georgia Italic';
-      font-size: 20px;
-      font-weight: 200;
-      letter-spacing: 2px;
-      margin-top: 10px;
+    p:last-child {
+      @include block-p-last
     }
   }
 
@@ -243,22 +218,14 @@ h1 {
     grid-area: block5;
 
     background: url('../img/chuck-taylors.jpg') 50% 60% no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include block;
     font-weight: bold;
     font-size: 33px;
 
     box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.2) inset;
-    
-    p:last-child{
-      font-family: 'Georgia Italic';
-      font-size: 25px;
-      font-weight: 200;
-      letter-spacing: 2px;
-      margin-top: 10px;
+
+    p:last-child {
+      @include block-p-last;
     }
   }
 
@@ -266,14 +233,9 @@ h1 {
     grid-area: block6;
 
     background: url('../img/pirelli.jpg') 46% no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    @include block;
+    padding-left: 60px;
+    padding-right: 60px;
     position: relative;
 
     box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.6) inset;
@@ -313,26 +275,15 @@ h1 {
     grid-area: block7;
 
     background: url('../img/jeans-adventure.jpg') 40% no-repeat;
-    background-size: cover;
+    @include block;
     font-weight: bold;
-    text-align: center;
     font-size: 35px;
     line-height: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     box-shadow: 0 0 0 176px rgba(0, 0, 0, 0.2) inset;
 
     span {
-      display: block;
-      font-style: italic;
-      font-family: 'Lato', sans-serif;
-      font-size: 25px;
-      letter-spacing: 1.5px;
+      @include block-span;
     }
   }
 
@@ -346,28 +297,21 @@ h1 {
   .block9 {
     grid-area: block9;
 
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include block;
     font-weight: bold;
     font-size: 33px;
 
-    p:first-child{
+    p:first-child {
       font-size: 40px;
     }
 
-    p:nth-child(2){
+    p:nth-child(2) {
       margin-top: 10px;
     }
 
-    p:last-child{
-      font-family: 'Georgia Italic';
-      font-size: 20px;
-      font-weight: 200;
-      letter-spacing: 2px;
-      margin-top: 10px;
+    p:last-child {
+      @include block-p-last;
     }
   }
 
@@ -375,17 +319,13 @@ h1 {
     grid-area: block10;
 
     background: url('../img/basic-blazer.jpg') 50% 60% no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include block;
     font-weight: bold;
     font-size: 33px;
 
     box-shadow: 0 0 0 175px rgba(0, 0, 0, 0.1) inset;
-    
-    p:last-child{
+
+    p:last-child {
       font-family: 'Georgia Italic';
       font-size: 25px;
       font-weight: 200;
