@@ -397,7 +397,7 @@ footer {
 }
 
 
-.cart {
+.cart-label {
   flex-direction: column;
 
   h1 {
@@ -409,6 +409,59 @@ footer {
 
   .desc {
     @include desc;
+  }
+}
+
+.cart-table {
+  width: 100%;
+  margin-bottom: 100px;
+
+  tr td:first-child {
+    width: 130px;
+  }
+
+  tr td:nth-child(6) {
+    width: 70px;
+  }
+
+  tr td:last-child {
+    width: 50px;
+  }
+
+  tr td:last-child button {
+    background: url('../img/close.svg') no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  th {
+    border-bottom: 1px solid #e5e5e5;
+    color: #bcbcbc;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  td {
+    padding: 20px 10px 20px 0;
+    font-size: 18px;
+  }
+
+  .count {
+    align-items: center;
+  }
+
+  .count div button {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
   }
 }
 
