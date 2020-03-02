@@ -119,14 +119,13 @@ h1 {
 }
 
 .gallery {
-  height: 1400px;
   color: white;
   display: grid;
   grid-template-areas: "block1 block2 block3 block4"
     "block1 block5 block6 block7"
     "block8 block9 block10 block7";
-  grid-template-rows: repeat(4, 25%);
-  grid-template-columns: repeat(3, 25%);
+  grid-template-rows: repeat(3, 350px);
+  grid-template-columns: repeat(4, 350px);
 
   .block1 {
     grid-area: block1;
@@ -334,6 +333,35 @@ h1 {
     }
   }
 
+}
+
+.slider {
+  position: relative;
+
+  .title {
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+    margin-top: 70px;
+    margin-bottom: 25px;
+  }
+
+  .prev,
+  .next {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    top: 63px;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0
+  }
 }
 
 
