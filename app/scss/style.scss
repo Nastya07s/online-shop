@@ -90,10 +90,7 @@ header {
     box-shadow: 0 0 0 316px rgba(0, 0, 0, 0.6) inset;
 
     .desc {
-      font-family: 'Georgia Italic';
-      color: #a0a0a0;
-      font-size: 35px;
-      margin-bottom: 135px;
+      @include desc;
     }
 
     button {
@@ -398,6 +395,23 @@ footer {
     }
   }
 }
+
+
+.cart {
+  flex-direction: column;
+
+  h1 {
+    font-weight: bold;
+    color: black;
+    text-shadow: none;
+    font-size: 60px;
+  }
+
+  .desc {
+    @include desc;
+  }
+}
+
 
 
 @import "media";
