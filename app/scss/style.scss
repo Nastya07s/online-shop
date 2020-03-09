@@ -465,6 +465,53 @@ footer {
   }
 }
 
+.select {
+  justify-content: center;
+  margin-bottom: 100px;
+
+  &-item {
+    select {
+      font-family: 'Georgia Italic';
+      font-size: 25px;
+      color: #606060;
+      width: 300px;
+      border: none;
+      border-bottom: 3px solid black;
+      margin-right: 60px;
+      padding: 10px;
+    }
+
+    &:last-child {
+      select {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.goods {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+
+  .good {
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 20px;
+
+    .name {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 15px;
+    }
+
+  }
+}
 
 
 @import "media";
