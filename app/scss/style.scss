@@ -39,6 +39,10 @@ nav {
     .flex {
       align-items: center;
     }
+    .user,.cart{
+      position: relative;
+      margin-left: 40px;
+    }
 
     .cart::before {
       content: '';
@@ -47,13 +51,36 @@ nav {
       width: 20px;
       height: 20px;
       position: absolute;
-      right: 130px;
+      right: 60px;
+    }
+
+    .user::before {
+      content: '';
+      background: url('../img/user.svg');
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 120px;
     }
 
     .search {
+      display: block;
+      background-color: #fff;
       border: 1px solid #959595;
       padding: 10px;
-      margin-left: 30px;
+    }
+
+    form{
+      
+      input{
+        height: 18.4px;
+        border: 1px solid #959595;
+        border-right: none;
+        margin-left: 30px;
+        margin-right: 0;
+        padding: 10px;
+      }
     }
   }
 }
